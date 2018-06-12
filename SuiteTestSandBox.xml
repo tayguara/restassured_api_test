@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteTestSandbox" verbose="3" parallel="classes">
+    <test name="sandboxTest">
+        <parameter name="url_api_sandbox" value="http://gitresttest.getsandbox.com/"/>
+        <parameter name="environment" value="production"/>
+        <classes>
+            <class name="tdreis.api.test.tests.sandbox.SandBoxTest"/>
+        </classes>
+    </test>
+</suite>

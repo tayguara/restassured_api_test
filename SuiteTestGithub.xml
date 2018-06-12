@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteTestGithub" verbose="3" parallel="classes">
+    <test name="githubTest">
+        <parameter name="url_api_github" value="https://api.github.com/"/>
+        <parameter name="environment" value="production"/>
+        <classes>
+            <class name="tdreis.api.test.tests.github.GitHubTest"/>
+        </classes>
+    </test>
+</suite>
